@@ -4,10 +4,6 @@
 
 # Criação de um app de relatório
 
-### Obs.
-
-Estou terminando os tests unitários para deixar com 100% de cobertura.
-
 ## Link do projeto em produção
 
 [Relatorio APP](https://relatorio-app.herokuapp.com/)
