@@ -1,6 +1,8 @@
 language: python
 python:
   - 3.8
+global:
+  - SECRET_KEY="g$ita%40wm=q1h4sr2jf+z"
 install:
   - pip install -r requirements-dev.txt codecov
 script:
