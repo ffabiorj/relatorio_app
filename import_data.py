@@ -1,12 +1,11 @@
 # from core.models import Consulta, Exame
+from core.models import Consulta, Exame
 import csv
 import django
 import os
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "relatorio_app.settings")
 django.setup()
-
-from core.models import Consulta, Exame
 
 
 Consulta.objects.all().delete()
