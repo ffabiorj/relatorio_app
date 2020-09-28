@@ -1,0 +1,1 @@
+web: gunicorn relatorio_app.wsgi --log-file -
