@@ -1,16 +1,16 @@
-from core.models import Consulta, Exame
+from relatorio.models import Consulta, Exame
 from django.db.models import Sum, Count
 
 
 def select_medicos():
     return Consulta.objects.raw(
-        "SELECT 1 id, nome_medico FROM core_consulta GROUP BY nome_medico ORDER BY nome_medico ASC"
+        "SELECT 1 id, nome_medico FROM relatorio_consulta GROUP BY nome_medico ORDER BY nome_medico ASC"
     )
 
 
 def select_datas():
     return Consulta.objects.raw(
-        "SELECT 1 id, data_consulta FROM core_consulta GROUP BY data_consulta ORDER BY data_consulta ASC"
+        "SELECT 1 id, data_consulta FROM relatorio_consulta GROUP BY data_consulta ORDER BY data_consulta ASC"
     )
 
 
