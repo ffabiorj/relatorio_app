@@ -27,6 +27,7 @@ def returna_consultas():
             qtde_exames=Count("exames__valor_exame"),
         )
         .order_by("-gasto_consulta")
+        .exclude(exames=None)
     )
 
 
@@ -44,6 +45,7 @@ def lista_medicos(nome_medico):
         )
         .filter(nome_medico=nome_medico)
         .order_by("-gasto_consulta")
+        .exclude(exames=None)
     )
 
 
@@ -61,6 +63,7 @@ def lista_datas(data_consulta):
         )
         .filter(data_consulta=data_consulta)
         .order_by("-gasto_consulta")
+        .exclude(exames=None)
     )
 
 
@@ -78,4 +81,5 @@ def lista_medicos_consultas(nome_medico, data_consulta):
         )
         .filter(nome_medico=nome_medico, data_consulta=data_consulta)
         .order_by("-gasto_consulta")
+        .exclude(exames=None)
     )
