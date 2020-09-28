@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.core.paginator import Paginator, EmptyPage
 from refact.queries import (
@@ -29,6 +30,10 @@ def index(request):
             consultas = lista_datas(data_consulta)
         else:
             consultas = lista_medicos_consultas(nome_medico, data_consulta)
+            if len(consultas) == 0:
+                messages.add_message(
+                    request, messages.INFO, "Não há registro para o filtro."
+                )
 
     else:
 
