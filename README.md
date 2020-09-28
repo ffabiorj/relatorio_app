@@ -12,10 +12,7 @@
 
 - Django
 - Postgres
-
-### Obs:
-
-No frontend eu utilizei CDN do Bootstrap porque é um projeto simples.
+- Bootstrap
 
 ## Roda o projeto localmente:
 
