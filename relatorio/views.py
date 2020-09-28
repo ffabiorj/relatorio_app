@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.core.paginator import Paginator, EmptyPage
-from datetime import datetime
 from refact.queries import (
     returna_consultas,
     select_medicos,
@@ -10,8 +9,6 @@ from refact.queries import (
     lista_datas,
     lista_medicos_consultas,
 )
-
-from django.utils.dateparse import parse_datetime
 
 
 def index(request):

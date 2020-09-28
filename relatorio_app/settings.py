@@ -119,4 +119,3 @@ DATE_FORMAT = "Y-m-d"
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = "Y-m-d"

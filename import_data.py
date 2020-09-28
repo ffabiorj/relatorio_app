@@ -1,5 +1,4 @@
 # from core.models import Consulta, Exame
-from core.models import Consulta, Exame
 import csv
 import django
 import os
@@ -7,6 +6,7 @@ import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "relatorio_app.settings")
 django.setup()
 
+from relatorio.models import Consulta, Exame
 
 Consulta.objects.all().delete()
 Exame.objects.all().delete()

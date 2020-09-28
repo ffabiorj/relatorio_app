@@ -1,4 +1,4 @@
-from relatorio.models import Consulta, Exame
+from relatorio.models import Consulta
 from django.db.models import Sum, Count
 
 
